@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - View Book Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>View Books</h2>
+        <form action="#" method="POST">
+            <!-- Book Title Search -->
+            <div class="form-group">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title">
+            </div>
+
+            <!-- Filter by Author -->
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Enter author name">
+            </div>
+
+            <!-- Filter by Genre -->
+            <div class="form-group">
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="">--Select Genre--</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-fiction</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="biography">Biography</option>
+                    <option value="history">History</option>
+                    <option value="mystery">Mystery</option>
+                </select>
+            </div>
+
+            <!-- Filter by Year of Publication -->
+            <div class="form-group">
+                <label for="year">Year of Publication:</label>
+                <input type="number" id="year" name="year" placeholder="Enter publication year">
+            </div>
+
+            <!-- Filter by Availability -->
+            <div class="form-group">
+                <label for="availability">Availability:</label>
+                <select id="availability" name="availability">
+                    <option value="all">All</option>
+                    <option value="available">Available</option>
+                    <option value="checked-out">Checked Out</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Search Books</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
